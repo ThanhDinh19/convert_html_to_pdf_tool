@@ -9,6 +9,6 @@ app.use(express.json({ limit: "10mb" }));
 
 app.use("/api", routes);
 
-app.listen(4000, () => {
+app.listen(4000, "0.0.0.0", () => {
   console.log("🚀 Backend running at http://localhost:4000");
 });
