@@ -1,5 +1,8 @@
+// const API_URL = "http://10.0.0.236:5000/api";
+const API_URL = "http://localhost:4000/api";
+
 export async function convertHtmlToPdf(html) {
-  const res = await fetch("http://localhost:4000/api/convert", {
+  const res = await fetch(`${API_URL}/convert`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ html })
